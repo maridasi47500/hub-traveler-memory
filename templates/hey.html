@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block montitre %}
+debut de mes mots: bienvenue dans hub traveler memory
+{% endblock %}
+{% block content %}
+<h1># hub-traveler-memory</h1>
+{% for x in users | reverse %}
+ <li>{{ x["first_name"]  }}</li>
+
+{% endfor %} 
+fin de mes mots : prends une photo/video ou enregistre le son de lendroit qui doit taccueillir, un routeur qui clignote, dehors le bruit des animaux de nuit. regreoupe des videos /photo de karmas de gens qui sont passés par le hub daerogare. le destin va te faire croiser un autre karma en arrivant dans laerogare, comme si tu ten souvenais.
+{% endblock %}
+{% block liens %}
+<a href="/">welcome</a>
+{% endblock %}
+<a href="/add_one_user"> add one user</a><a href="/add_one_userarrival"> add one userarrival</a><a href="/add_one_linkkarmavideo"> add one linkkarmavideo</a><a href="/add_one_linkkarmaphoto"> add one linkkarmaphoto</a><a href="/add_one_linkkarmasound"> add one linkkarmasound</a><a href="/add_one_linkkarmaprogram"> add one linkkarmaprogram</a><a href="/add_one_city"> add one city</a><a href="/add_one_airport_hub"> add one airport_hub</a><a href="/add_one_country"> add one country</a><a href="/add_one_karma_video"> add one karma_video</a><a href="/add_one_karma_photo"> add one karma_photo</a><a href="/add_one_karma_sound"> add one karma_sound</a><a href="/add_one_karma_program"> add one karma_program</a><a href="/add_one_welcome_video"> add one welcome_video</a><a href="/add_one_welcome_sound"> add one welcome_sound</a>
